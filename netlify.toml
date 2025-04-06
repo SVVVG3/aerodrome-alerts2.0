@@ -7,13 +7,13 @@
 
 [[redirects]]
   from = "/.well-known/farcaster.json"
-  to = "/farcaster.json"
+  to = "/.well-known/farcaster.json"
   status = 200
   force = true
   headers = {Content-Type = "application/json"}
 
 [[headers]]
-  for = "/farcaster.json"
+  for = "/.well-known/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, OPTIONS"
