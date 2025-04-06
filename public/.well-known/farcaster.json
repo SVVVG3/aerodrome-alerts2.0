@@ -4,13 +4,11 @@
   "buttons": [
     {
       "label": "View Positions",
-      "action": "post",
-      "target": "https://aerodrome-alerts.netlify.app/api/frame"
+      "action": "post"
     },
     {
       "label": "Settings",
-      "action": "post",
-      "target": "https://aerodrome-alerts.netlify.app/api/frame"
+      "action": "post"
     }
   ],
   "post_url": "https://aerodrome-alerts.netlify.app/api/frame"
