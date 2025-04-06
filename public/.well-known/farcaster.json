@@ -1,8 +1,8 @@
 {
   "name": "Aerodrome Alerts",
   "description": "Monitor your Aerodrome positions and get alerts when they go out of range",
-  "image": "http://localhost:3000/images/aerodrome-alerts.png",
-  "external_url": "http://localhost:3000",
+  "image": "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
+  "external_url": "https://aerodrome-alerts.netlify.app",
   "frames": {
     "version": "vNext",
     "image": "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
