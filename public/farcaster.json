@@ -1,0 +1,15 @@
+{
+  "version": "vNext",
+  "image": "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
+  "buttons": [
+    {
+      "label": "View Positions",
+      "action": "post"
+    },
+    {
+      "label": "Settings",
+      "action": "post"
+    }
+  ],
+  "post_url": "https://aerodrome-alerts.netlify.app/api/frame"
+} 
