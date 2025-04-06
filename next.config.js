@@ -24,7 +24,9 @@ const nextConfig = {
         ]
       }
     ];
-  }
+  },
+  allowedDevOrigins: ['warpcast.com'],
+  output: 'standalone'
 };
 
 module.exports = nextConfig; 

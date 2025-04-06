@@ -13,6 +13,23 @@ interface Position {
   currentTick: number;
 }
 
+interface GraphQLPosition {
+  id: string;
+  token0: {
+    symbol: string;
+  };
+  token1: {
+    symbol: string;
+  };
+  pool: {
+    id: string;
+  };
+  liquidity: string;
+  tickLower: string;
+  tickUpper: string;
+  currentTick: string;
+}
+
 interface NotificationSettings {
   outOfRangeAlerts: boolean;
   impermanentLossAlerts: boolean;
@@ -78,7 +95,7 @@ export default function Home() {
         const { data } = await response.json();
         
         // Transform the data to match our Position interface
-        const transformedPositions = data.positions.map((pos: any) => ({
+        const transformedPositions = data.positions.map((pos: GraphQLPosition) => ({
           token0: pos.token0.symbol,
           token1: pos.token1.symbol,
           poolAddress: pos.pool.id,
@@ -186,7 +203,7 @@ export default function Home() {
               {positions.length === 0 ? (
                 <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded relative" role="alert">
                   <strong className="font-bold">No positions found!</strong>
-                  <span className="block sm:inline"> You don't have any positions yet.</span>
+                  <span className="block sm:inline">You don&apos;t have any positions yet.</span>
                 </div>
               ) : (
                 positions.map((position) => (
