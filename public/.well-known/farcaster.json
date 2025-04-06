@@ -1,0 +1,21 @@
+{
+  "name": "Aerodrome Alerts",
+  "description": "Monitor your Aerodrome positions and get alerts when they go out of range",
+  "image": "http://localhost:3000/images/aerodrome-alerts.png",
+  "external_url": "http://localhost:3000",
+  "frames": {
+    "version": "vNext",
+    "image": "http://localhost:3000/images/aerodrome-alerts.png",
+    "buttons": [
+      {
+        "label": "View Positions",
+        "action": "post"
+      },
+      {
+        "label": "Settings",
+        "action": "post"
+      }
+    ],
+    "post_url": "http://localhost:3000/api/frame"
+  }
+} 
