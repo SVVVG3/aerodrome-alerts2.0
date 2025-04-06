@@ -19,14 +19,23 @@ export const metadata: Metadata = {
 
 export default function FramePage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-4">
-      <h1 className="text-2xl font-bold mb-4">Aerodrome Alerts</h1>
-      <p className="text-center mb-4">Monitor your Aerodrome positions and get alerts when they go out of range</p>
-      <img 
-        src="/images/aerodrome-alerts.png" 
-        alt="Aerodrome Alerts" 
-        className="max-w-md w-full"
-      />
-    </div>
+    <>
+      <head>
+        <meta property="fc:frame" content="vNext" />
+        <meta property="fc:frame:image" content="https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png" />
+        <meta property="fc:frame:button:1" content="View Positions" />
+        <meta property="fc:frame:button:2" content="Settings" />
+        <meta property="fc:frame:post_url" content="https://aerodrome-alerts.netlify.app/api/frame" />
+      </head>
+      <div className="flex min-h-screen flex-col items-center justify-center p-4">
+        <h1 className="text-2xl font-bold mb-4">Aerodrome Alerts</h1>
+        <p className="text-center mb-4">Monitor your Aerodrome positions and get alerts when they go out of range</p>
+        <img 
+          src="/images/aerodrome-alerts.png" 
+          alt="Aerodrome Alerts" 
+          className="max-w-md w-full"
+        />
+      </div>
+    </>
   )
 } 
