@@ -5,7 +5,7 @@
   "external_url": "http://localhost:3000",
   "frames": {
     "version": "vNext",
-    "image": "http://localhost:3000/images/aerodrome-alerts.png",
+    "image": "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
     "buttons": [
       {
         "label": "View Positions",
@@ -16,6 +16,6 @@
         "action": "post"
       }
     ],
-    "post_url": "http://localhost:3000/api/frame"
+    "post_url": "https://aerodrome-alerts.netlify.app/api/frame"
   }
 } 

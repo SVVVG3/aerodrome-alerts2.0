@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     switch (untrustedData.buttonIndex) {
       case 1: // View Positions
         return NextResponse.json({
-          image: "http://localhost:3000/images/aerodrome-alerts.png",
+          image: "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
           buttons: [
             {
               label: "View Positions",
@@ -20,12 +20,12 @@ export async function POST(req: Request) {
               action: "post"
             }
           ],
-          post_url: "http://localhost:3000/api/frame"
+          post_url: "https://aerodrome-alerts.netlify.app/api/frame"
         });
       
       case 2: // Settings
         return NextResponse.json({
-          image: "http://localhost:3000/images/aerodrome-alerts.png",
+          image: "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
           buttons: [
             {
               label: "Configure Alerts",
@@ -36,12 +36,12 @@ export async function POST(req: Request) {
               action: "post"
             }
           ],
-          post_url: "http://localhost:3000/api/frame"
+          post_url: "https://aerodrome-alerts.netlify.app/api/frame"
         });
 
       default:
         return NextResponse.json({
-          image: "http://localhost:3000/images/aerodrome-alerts.png",
+          image: "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
           buttons: [
             {
               label: "View Positions",
@@ -52,20 +52,20 @@ export async function POST(req: Request) {
               action: "post"
             }
           ],
-          post_url: "http://localhost:3000/api/frame"
+          post_url: "https://aerodrome-alerts.netlify.app/api/frame"
         });
     }
   } catch (error) {
     console.error('Error processing frame action:', error);
     return NextResponse.json({
-      image: "http://localhost:3000/images/aerodrome-alerts.png",
+      image: "https://aerodrome-alerts.netlify.app/images/aerodrome-alerts.png",
       buttons: [
         {
           label: "Error - Try Again",
           action: "post"
         }
       ],
-      post_url: "http://localhost:3000/api/frame"
+      post_url: "https://aerodrome-alerts.netlify.app/api/frame"
     });
   }
 } 
